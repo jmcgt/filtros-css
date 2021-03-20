@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>
+            Filtros CSS
+        </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="prism/tomorrow-night.css">
+    </head>
+    <body>
+       <div class="container">
+           <ul>
+              <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div>                   
+                   <div class="codigo grid-5">
+                       <h1>Filtros CSS</h1>                     
+                       <p>Alguns filtros para estilizar suas fotos sem deixá-las mais pesadas e sem Photoshop: </p>                       
+                   </div>  
+               </li>
+               <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img class="grayscale" src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div>                   
+                   <div class="codigo grid-5">
+                       <h1>Preto e Branco</h1>                       
+                       <pre>
+                       <code class="language-css">
+                       .grayscale
+                       {
+                          filter: grayscale(100%);
+                       }
+                       </code>
+                       </pre>
+                   </div>  
+               </li>
+               <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img class="saturate" src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div>
+                   <div class="codigo grid-5">
+                       <h1>Saturação</h1>                       
+                       <pre>
+                       <code class="language-css">
+                       .saturate
+                       {
+                            filter: saturate(150%);
+                       }
+                       </code>
+                       </pre>
+                   </div> 
+               </li>
+               <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img class="sepia" src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div>
+                   <div class="codigo grid-5">
+                       <h1>Sépia</h1>                       
+                       <pre>
+                       <code class="language-css">
+                       .sepia
+                       {
+                            filter: sepia(100%);
+                       }
+                       </code>
+                       </pre>
+                   </div>   
+               </li>
+               <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img class="blur" src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div>
+                   <div class="codigo grid-5">
+                       <h1>Desfoque</h1>                       
+                       <pre>
+                       <code class="language-css">
+                       .blur
+                       {
+                            filter: blur(2px);
+                       }
+                       </code>
+                       </pre>
+                   </div>  
+               </li>
+               <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img class="brightness-contrast" src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div> 
+                   <div class="codigo grid-5">
+                       <h1>Brilho e Contraste</h1>                       
+                       <pre>
+                       <code class="language-css">
+                       .brightness-contrast
+                       {
+                            filter:brightness(150%) 
+                                   contrast(150%);
+                       }
+                       </code>
+                       </pre>
+                   </div>  
+               </li>
+               <li>
+                   <div class="grid-8">
+                       <div class="borda">
+                           <img class="invert" src="foto2.jpg" alt="Foto">
+                       </div>
+                   </div> 
+                   <div class="codigo grid-5">
+                       <h1>Negativo</h1>                       
+                       <pre>
+                       <code class="language-css">
+                       .invert
+                       {
+                            filter: invert(100%);
+                       }
+                       </code>
+                       </pre>
+                   </div>  
+               </li>
+           </ul>           
+       </div>
+       <script src="prism/prism.js"></script>       
+    </body>
+</html>
